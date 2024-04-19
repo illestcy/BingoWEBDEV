@@ -8,8 +8,17 @@ let N1 = 0, N2 = 0; N3 = 0, N4 = 0, N5 = 0;
 let G1 = 0, G2 = 0; G3 = 0, G4 = 0, G5 = 0;
 let O1 = 0, O2 = 0; O3 = 0, O4 = 0, O5 = 0;
 
+var table = document.querySelector('table');
+
+table.addEventListener('click', function(e) {
+  e.target.classList.toggle('highlite')
+})
+
 function newNumber(maxNumber) {
    let x = Math.floor (Math.random()* maxNumber)+ 1;
+
+ 
+
 
    // if ... esle if ... esle statement
    // conditional operator:
@@ -368,3 +377,12 @@ while(!B || !I || !N || !G || !O ) {
     newNumber5(75);
 
 }
+
+
+
+
+
+
+
+  
+  
